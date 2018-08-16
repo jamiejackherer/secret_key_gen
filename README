@@ -1,0 +1,8 @@
+This is a pretty simple python script to generate a random string (secret key).
+
+It will generate a random string of the specified length.
+It will refuse to accept a lenth of less than 10 as this
+is not really secure, so it will auto gen a length of
+128.
+
+Enjoy!
