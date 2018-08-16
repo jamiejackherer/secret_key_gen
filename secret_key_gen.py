@@ -16,4 +16,8 @@ def mkkey(length):
     
     
 if __name__ == '__main__':
-    mkkey(128)
+    length = input('[+] Please choose a length for your new secret key\n[+] Please chose a length of 10 or more.\n>>> ')
+    if int(length) <= 10:
+        print('[+] Having a length of less than 10 chars is\n| not recomended so we think you need a longer one!\n| We will choose a length of 128 for you.')
+        length = 128
+    mkkey(int(length))
